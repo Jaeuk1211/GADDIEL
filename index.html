@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>갓디엘 스포츠 유형 테스트</title>
+    <title>갓디엘 축구 포지션 유형 테스트</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="https://cdn.jsdelivr.net/gh/webfontworld/baemin/JejuHallasan.css" rel="stylesheet">
     <style>
@@ -70,7 +70,7 @@
             cursor: pointer;
             outline: none;
         }
-        .option-btn:hover {
+        .option-btn:active, .option-btn:hover {
             background: #2ac1bc;
             color: #fff;
             box-shadow: 0 4px 16px rgba(42,193,188,0.13);
@@ -121,7 +121,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>갓디엘 스포츠 유형 테스트</h2>
+        <h2>갓디엘 축구 포지션 유형 테스트</h2>
         <div class="question-box" id="questionBox"></div>
         <div id="mbtiResult"></div>
     </div>
@@ -218,6 +218,7 @@
         const mbtiResults = {
             "ESTP": {
                 title: "번개처럼 터지는 골잡이!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/estp.jpg",
                 list: [
                     "찬스가 오면 누구보다 빠르게 골문을 노립니다.",
                     "상대 수비를 한순간에 뚫는 돌파력이 강점입니다.",
@@ -238,6 +239,7 @@
             },
             "ESTJ": {
                 title: "철벽처럼 단단한 우측 풀백!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/estj.jpg",
                 list: [
                     "팀의 수비 라인을 꼼꼼하게 정비합니다.",
                     "위기 상황에서도 흔들림 없는 안정감을 줍니다.",
@@ -258,6 +260,7 @@
             },
             "ESFP": {
                 title: "무대를 빛내는 세컨드 스트라이커!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/esfp.jpg",
                 list: [
                     "즉흥적인 움직임으로 상대를 당황하게 만듭니다.",
                     "재치 넘치는 패스로 찬스를 만듭니다.",
@@ -278,6 +281,7 @@
             },
             "ESFJ": {
                 title: "헌신의 아이콘 우측 윙백!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/esfj.jpg",
                 list: [
                     "팀원들을 위해 쉴 새 없이 뛰어다닙니다.",
                     "공격과 수비를 오가며 팀에 헌신합니다.",
@@ -298,6 +302,7 @@
             },
             "ENTP": {
                 title: "기상천외 플레이메이커 공격형 미드필더!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/entp.jpg",
                 list: [
                     "예측 불가한 패스로 상대를 혼란스럽게 만듭니다.",
                     "창의적인 아이디어로 경기를 주도합니다.",
@@ -339,6 +344,7 @@
             },
             "ENFP": {
                 title: "자유로운 영혼 좌측 윙백!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/enfp.jpg",
                 list: [
                     "측면을 활발하게 오가며 에너지를 뿜어냅니다.",
                     "창의적인 돌파로 상대를 흔듭니다.",
@@ -359,6 +365,7 @@
             },
             "ENFJ": {
                 title: "모두를 하나로 만드는 우측 측면 미드필더!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/enfj.jpg",
                 list: [
                     "팀원들을 격려하며 사기를 높입니다.",
                     "협력 플레이에 능숙합니다.",
@@ -379,6 +386,7 @@
             },
             "ISTP": {
                 title: "침착한 방어의 달인 좌측 풀백!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/istp.jpg",
                 list: [
                     "위기 상황에서도 흔들림 없이 방어합니다.",
                     "상대 공격수의 움직임을 빠르게 파악합니다.",
@@ -399,6 +407,7 @@
             },
             "ISTJ": {
                 title: "꼼꼼함의 끝판왕 감독!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/istj.jpg",
                 list: [
                     "체계적인 전략으로 팀을 이끕니다.",
                     "꼼꼼한 분석으로 상대를 연구합니다.",
@@ -419,6 +428,7 @@
             },
             "ISFP": {
                 title: "감각적인 예술가 좌측 윙 포워드!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/isfp.jpg",
                 list: [
                     "감각적인 드리블로 상대를 현혹합니다.",
                     "순간적인 움직임으로 공간을 만듭니다.",
@@ -439,6 +449,7 @@
             },
             "ISFJ": {
                 title: "묵묵한 신뢰의 우측 윙 포워드!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/isfj.jpg",
                 list: [
                     "성실하고 꾸준하게 움직입니다.",
                     "동료를 위해 헌신적으로 뛰어다닙니다.",
@@ -459,6 +470,7 @@
             },
             "INTP": {
                 title: "두뇌 플레이어 중앙 미드필더!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/intp.jpg",
                 list: [
                     "넓은 시야로 경기를 조율합니다.",
                     "분석적인 플레이가 강점입니다.",
@@ -479,6 +491,7 @@
             },
             "INTJ": {
                 title: "전략의 지략가 수비형 미드필더!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/intj.jpg",
                 list: [
                     "경기 전체를 조망하며 플레이합니다.",
                     "전략적인 움직임으로 상대를 제압합니다.",
@@ -499,6 +512,7 @@
             },
             "INFP": {
                 title: "창의력 폭발 좌측 측면 미드필더!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/infp.jpg",
                 list: [
                     "창의적인 움직임으로 팀에 활기를 더합니다.",
                     "감성적인 플레이가 강점입니다.",
@@ -519,6 +533,7 @@
             },
             "INFJ": {
                 title: "침착한 골문 수호자 골키퍼!",
+                img: "https://jaeuk1211.github.io/GADDIEL/mbti/infj.jpg",
                 list: [
                     "집중력이 뛰어나 위기에도 흔들리지 않습니다.",
                     "팀원들에게 신뢰를 주는 든든한 수호자입니다.",
