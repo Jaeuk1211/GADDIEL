@@ -92,6 +92,7 @@
             color: #333;
         }
         .copyright {
+            font-family: 'Jeju Hallasan', 'Baemin Jua', sans-serif;
             margin-top: 32px;
             text-align: center;
             font-size: 0.97em;
@@ -103,6 +104,7 @@
             margin-bottom: 28px;
         }
         .intro-title {
+            font-family: 'Jeju Hallasan', 'Baemin Jua', sans-serif;
             font-size: 1.09em;
             font-weight: bold;
             text-align: center;
@@ -115,18 +117,19 @@
             margin-bottom: 14px;
         }
         .intro-img {
-            max-width: 120px;
-            width: 55vw;
+            max-width: 300px;
             border-radius: 12px;
             box-shadow: 0 2px 12px rgba(42,193,188,0.10);
         }
         .intro-text {
+            font-family: 'Jeju Hallasan', 'Baemin Jua', sans-serif;
             font-size: 0.97em;
             color: #222;
             text-align: center;
             margin-bottom: 12px;
         }
         .intro-mission, .intro-vision, .intro-schedule, .intro-contact {
+            font-family: 'Jeju Hallasan', 'Baemin Jua', sans-serif;
             font-size: 0.95em;
             color: #333;
             margin-bottom: 10px;
@@ -142,6 +145,7 @@
             margin: 18px 0 12px 0;
         }
         .real-result-title {
+            font-family: 'Jeju Hallasan', 'Baemin Jua', sans-serif;
             text-align: center;
             color: #2ac1bc;
             font-weight: 600;
@@ -151,7 +155,7 @@
         }
         @media (max-width: 600px) {
             .container {
-                max-width: 100vw;
+                max-width: 90vw;
                 padding: 18px 4vw 26px 4vw;
                 margin-top: 12px;
                 border-radius: 0 0 18px 18px;
@@ -179,7 +183,7 @@
                 margin-top: 18px;
             }
             .intro-img {
-                max-width: 80px;
+                max-width: 200px;
                 width: 44vw;
             }
             .intro-title {
@@ -201,7 +205,7 @@
         <div style="text-align:center; margin-bottom: 18px;">
             <img src="https://jaeuk1211.github.io/GADDIEL/gaddiel.png" 
                 alt="갓디엘 로고" 
-                style="max-width:120px; width:60%; border-radius:18px; box-shadow:0 2px 12px rgba(42,193,188,0.10);" />
+                style="max-width:150px; width:60%; border-radius:18px; box-shadow:0 2px 12px rgba(42,193,188,0.10);" />
         </div>
         <h2>갓디엘 축구 포지션 유형 테스트</h2>
         <div class="question-box" id="questionBox"></div>
@@ -738,7 +742,7 @@
             let html = '';
             if (result.img) {
                 html += `<div style="text-align:center;margin-bottom:24px;">
-                            <img src="${result.img}" style="max-width:180px;width:70%;border-radius:18px;box-shadow:0 2px 12px rgba(42,193,188,0.10);"/>
+                            <img src="${result.img}" style="max-width:200px;width:70%;border-radius:18px;box-shadow:0 2px 12px rgba(42,193,188,0.10);"/>
                         </div>`;
             }
             html += `<div class="mbti-title"><b>${result.title}</b></div><ol class="mbti-list">`;
