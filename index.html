@@ -133,6 +133,11 @@
 </head>
 <body>
     <div class="container">
+        <div style="text-align:center; margin-bottom: 18px;">
+            <img src="https://jaeuk1211.github.io/GADDIEL/gaddiel.png" 
+                alt="갓디엘 로고" 
+                style="max-width:120px; width:60%; border-radius:18px; box-shadow:0 2px 12px rgba(42,193,188,0.10);" />
+        </div>
         <h2>갓디엘 축구 포지션 유형 테스트</h2>
         <div class="question-box" id="questionBox"></div>
         <div id="mbtiResult"></div>
@@ -635,7 +640,7 @@
                 html += `<li>${item}</li>`;
             });
             html += `</ol>`;
-            document.getElementById('questionBox').innerHTML = '';
+            document.getElementById('questionBox').style.display = 'none';
             document.getElementById('mbtiResult').innerHTML = html;
         }
 
