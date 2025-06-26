@@ -620,7 +620,7 @@
                 html += `<li>${item}</li>`;
             });
             html += `</ol>`;
-            document.getElementById('questionBox').innerHTML = '';
+            document.getElementById('questionBox').style.display = 'none';
             document.getElementById('mbtiResult').innerHTML = html;
         }
 
