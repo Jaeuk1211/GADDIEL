@@ -91,6 +91,14 @@
             line-height: 1.7;
             color: #333;
         }
+        .copyright {
+            margin-top: 32px;
+            text-align: center;
+            font-size: 0.97em;
+            color: #aaa;
+            letter-spacing: 0.1px;
+            user-select: none;
+        }
         @media (max-width: 600px) {
             .container {
                 max-width: 100vw;
@@ -116,6 +124,10 @@
                 font-size: 0.97em;
                 padding-left: 12px;
             }
+            .copyright {
+                font-size: 0.87em;
+                margin-top: 18px;
+            }
         }
     </style>
 </head>
@@ -124,6 +136,9 @@
         <h2>갓디엘 축구 포지션 유형 테스트</h2>
         <div class="question-box" id="questionBox"></div>
         <div id="mbtiResult"></div>
+        <div class="copyright">
+            © 2025 Jack 김재욱, All rights reserved.
+        </div>
     </div>
     <script>
         // 문항 및 선택지와 MBTI 코드 매핑
@@ -620,7 +635,7 @@
                 html += `<li>${item}</li>`;
             });
             html += `</ol>`;
-            document.getElementById('questionBox').style.display = 'none';
+            document.getElementById('questionBox').innerHTML = '';
             document.getElementById('mbtiResult').innerHTML = html;
         }
 
