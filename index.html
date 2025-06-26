@@ -99,6 +99,56 @@
             letter-spacing: 0.1px;
             user-select: none;
         }
+        .intro-section {
+            margin-bottom: 28px;
+        }
+        .intro-title {
+            font-size: 1.09em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 14px;
+            color: #2ac1bc;
+            letter-spacing: -0.5px;
+        }
+        .intro-img-wrap {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .intro-img {
+            max-width: 120px;
+            width: 55vw;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(42,193,188,0.10);
+        }
+        .intro-text {
+            font-size: 0.97em;
+            color: #222;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .intro-mission, .intro-vision, .intro-schedule, .intro-contact {
+            font-size: 0.95em;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .intro-schedule ul {
+            margin: 6px 0 0 0;
+            padding-left: 16px;
+        }
+        .divider {
+            border: none;
+            border-top: 1.2px solid #e0e0e0;
+            margin: 18px 0 12px 0;
+        }
+        .real-result-title {
+            text-align: center;
+            color: #2ac1bc;
+            font-weight: 600;
+            font-size: 1.07em;
+            margin-bottom: 22px;
+            letter-spacing: -0.5px;
+        }
         @media (max-width: 600px) {
             .container {
                 max-width: 100vw;
@@ -127,6 +177,21 @@
             .copyright {
                 font-size: 0.87em;
                 margin-top: 18px;
+            }
+            .intro-img {
+                max-width: 80px;
+                width: 44vw;
+            }
+            .intro-title {
+                font-size: 0.98em;
+                margin-bottom: 10px;
+            }
+            .intro-section {
+                margin-bottom: 14px;
+            }
+            .real-result-title {
+                font-size: 0.99em;
+                margin-bottom: 16px;
             }
         }
     </style>
@@ -630,7 +695,6 @@
                 return;
             }
 
-            // 소그룹 안내 HTML
             let introHtml = `
                 <div class="intro-section">
                     <div class="intro-title">결과 확인 전에 !<br>갓디엘 소그룹 소개가 있겠습니다.</div>
@@ -654,8 +718,10 @@
                         <b>[모임 일정]</b>
                         <ul>
                             <li>일   시 : 토요일 18:30~21:00 (월 평균 2-3회 진행)</li>
-                            <li>장   소 : 대치유수지 체육공원 (형제 - 축구장 / 자매 - 풋살장)</li>
-                            <li>준비물 : 운동복 및 풋살화 (잔디가 짧아 축구화는 권장하지 않음)</li>
+                            <li>장   소 : 대치유수지 체육공원</li>
+                            <li>        (형제 - 축구장 / 자매 - 풋살장)</li>
+                            <li>준비물 : 운동복 및 풋살화</li>
+                            <li>       (잔디가 짧아 축구화는 권장하지 않음)</li>
                             <li>휴식기 : 동계(1-2월), 하계(7-8월)</li>
                         </ul>
                     </div>
@@ -665,6 +731,7 @@
                         총무 98동기 김동욱 (010-5580-9065)
                     </div>
                     <hr class="divider">
+                    <div class="real-result-title">이제 진짜 결과 확인!</div>
                 </div>
             `;
 
